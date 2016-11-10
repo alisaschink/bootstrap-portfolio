@@ -3,106 +3,114 @@
 	<head>
 		<title>Portfolio</title>
 
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	</head>
 
 	<body>
-		<header>
-			<h1> Alisa Schink</h1>
-		</header>
-
-		
 		<!--Navbar-->
-		<ul id="navbar">
-			<li><a href="index.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
+	<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<div id="main-content">
+
+  <!--page header-->
+  <div class="page-header">
+    <h1>Portfolio </h1>
+  </div>
+
+	<!--main body-->
+
+      <div id="slideshow">
+      	<a href="#"><img class="mySlides" src="assets/images/download.jpg"></a>
+
+		<a href="#"><img class="mySlides" src="assets/images/download (1).jpg"></a>
+
+		<a href="#"><img class="mySlides" src="assets/images/download (2).jpg"></a>
+
+		<a href="#"><img class="mySlides" src="assets/images/download (3).jpg"></a>
+
+		<a href="#"><img class="mySlides" src="assets/images/download (5).jpg"></a>
+
+		<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
 
 
-		<!--About me section-->
-		<div id="maincontent">
-			<section id="mainbody">
+		<script type="text/javascript">
 			
-				<div class="title">
-					<h2> Portfolio</h2>
-				</div>
+			var slideIndex = 0;
+			carousel();
 
-				
-				<div class=" block" id="block1">
-					<a href="#">
-						<img src="assets/images/download.jpg" class="portfolioimage" >
+			function carousel() {
+    			var i;
+    			var x = document.getElementsByClassName("mySlides");
+    			
+    			for (i = 0; i < x.length; i++) {
+      			x[i].style.display = "none"; 
+    			}
 
-						<h2 class="banner">Project 1</h2>
-					</a>
-					
-				</div>
+    			slideIndex++;
+    			if (slideIndex > x.length) {slideIndex = 1} 
+    			x[slideIndex-1].style.display = "block"; 
+    			setTimeout(carousel, 3000); // Change image every 3 seconds
+				}
 
-				<div class="block" id="block2">
-					<a href="#">
-						<img src="assets/images/download (1).jpg" class="portfolioimage">
-
-						<h2 class="banner">Project 2</h2>
-					</a>
-
-				</div>
-
-				<div class="block" id="block3">
-					<a href="#">
-						<img src="assets/images/download (2).jpg" class="portfolioimage">
-
-						<h2 class="banner">Project 3</h2>
-					</a>
-
-				</div>
-
-				<div class="block" id="block4">
-					<a href="#">
-						<img src="assets/images/download (3).jpg" class="portfolioimage">
-
-						<h2 class="banner">Project 4</h2>
-					</a>
-
-				</div>
-
-				<div class="block" id="block5">
-					<a href="#">
-						<img src="assets/images/download (5).jpg" class="portfolioimage">
-
-						<h2 class="banner">Project 5</h2>
-					</a>
-
-				</div>
-
-			</section>
+		</script>
+	</div>
 
 		
-			<!--Social connect section-->
-			<section id="connect">
-				<div class="title">
-					<h3> Connect with Me</h3>
-				</div>
+	<!--Footer-->
+	<div id="footer">
+		<h4 id="footer-left">@copyright 2016 Alisa Schink</h4>
+			
+		<a class="footer-right"  href="https://github.com/alisaschink/">
+		<img id="github" src="assets/images/github.png" class="socialimage" >
+		</a>
 
-			<a href="https://github.com/alisaschink/">
-				<img src="assets/images/github.png" class="socialimage" >
-				</a>
+		<a class="footer-right"  href="https://www.linkedin.com/in/alisa-schink"><img id="linkedin" src="assets/images/linkedin.png" class="socialimage">
+		</a>
 
-				<a href="https://www.linkedin.com/in/alisa-schink"><img src="assets/images/linkedin.png" class="socialimage">
-				</a>
-
-				<a href="http://stackoverflow.com/users/6938685/alisaschink"><img src="assets/images/stackoverflow.png" class="socialimage">
-				</a>
-			</section>
+		<a class="footer-right"  href="http://stackoverflow.com/users/6938685/alisaschink"><img id="stack" src="assets/images/stackoverflow.png" class="socialimage">
+		</a>
+		</section>
 		</div>
+	</div>
 
 		
-		<!--Footer-->
-		<div id="footer">
-			<h4>@copyright 2016 Alisa Schink</h4>
-		</div>
-
-		
-	</body>
+</body>
 </html>
