@@ -56,21 +56,31 @@
 
 	<!--main body-->
 
-      <div id="slideshow">
-      	<a href="#"><img class="mySlides" src="assets/images/download.jpg"></a>
+      <div id="slideshow1">
+      	<a href="#">
+      	<img class="mySlides1" src="assets/images/download.jpg">
+      	</a>
 
-		<a href="#"><img class="mySlides" src="assets/images/download (1).jpg"></a>
+		<a href="#">
+		<img class="mySlides1" src="assets/images/download (1).jpg">
+		</a>
 
-		<a href="#"><img class="mySlides" src="assets/images/download (2).jpg"></a>
+		<a href="#">
+		<img class="mySlides1" src="assets/images/download (2).jpg">
+		</a>
 
-		<a href="#"><img class="mySlides" src="assets/images/download (3).jpg"></a>
+		<a href="#">
+		<img class="mySlides1" src="assets/images/download (3).jpg">
+		</a>
 
-		<a href="#"><img class="mySlides" src="assets/images/download (5).jpg"></a>
+		<a href="#">
+		<img class="mySlides1" src="assets/images/download (5).jpg">
+		</a>
 
-		<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-		<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
 
 
+
+		<!--creates slideshow for portfolio pictures-->
 		<script type="text/javascript">
 			
 			var slideIndex = 0;
@@ -78,7 +88,7 @@
 
 			function carousel() {
     			var i;
-    			var x = document.getElementsByClassName("mySlides");
+    			var x = document.getElementsByClassName("mySlides1");
     			
     			for (i = 0; i < x.length; i++) {
       			x[i].style.display = "none"; 
@@ -92,6 +102,56 @@
 
 		</script>
 	</div>
+	
+<div id="slideshow2">
+      	<a href="#">
+      	<img class="mySlides2" src="assets/images/download.jpg">
+      	</a>
+
+		<a href="#">
+		<img class="mySlides2" src="assets/images/download (1).jpg">
+		</a>
+
+		<a href="#">
+		<img class="mySlides2" src="assets/images/download (2).jpg">
+		</a>
+
+		<a href="#">
+		<img class="mySlides2" src="assets/images/download (3).jpg">
+		</a>
+
+		<a href="#">
+		<img class="mySlides2" src="assets/images/download (5).jpg">
+		</a>
+		
+
+		<!--creates slideshow for portfolio pictures-->
+		<script type="text/javascript">
+			
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+    			var i;
+    			var x = document.getElementsByClassName("mySlides2");
+    			
+    			for (i = 0; i < x.length; i++) {
+      			x[i].style.display = "none"; 
+    			}
+
+    			slideIndex++;
+    			if (slideIndex > x.length) {slideIndex = 1} 
+    			x[slideIndex-1].style.display = "block"; 
+    			setTimeout(carousel, 3000); // Change image every 3 seconds
+				}
+
+		</script>
+
+
+	</div>
+
+
+
 
 		
 	<!--Footer-->

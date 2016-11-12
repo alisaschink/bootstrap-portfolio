@@ -6,13 +6,14 @@
 }
 
 .page-header{
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 h1{
 	
 	padding-left: 50px;
 	padding-right: 50px;
+
 }
 
  form{
@@ -30,6 +31,11 @@ h1{
 	width: 100%;
 	line-height: 20px
 	
+}
+#main-content{
+	width: 100%
+	margin: 10px;
+
 }
 
 #message{
@@ -72,15 +78,36 @@ h1{
 }
 
 
-.mySlides{
-	width: 600px;
-	height: 300px;
+.mySlides1{
+	width: 500px;
+	height: 250px;
+	margin: 0px 20px 20px 20px;
+
 }
 
-#slideshow{
+.mySlides2{
+	width: 500px;
+	height: 250px;
+	margin: 0px 20px 20px 20px;
+
+}
+
+#slideshow1{
 	align-content: center;
-	margin-left: 325px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	margin-right: 50px;
+	margin-top: 0px;
+	float: left;
+}
+
+#slideshow2{
+	align-content: center;
+	margin-left: 0px;
 	margin-bottom: 50px;
+	margin-top: 0px;
+	margin-right: 50px;
+	float: left;
 
 }
 
